@@ -6,7 +6,8 @@ def greeter(func):
 
 
 def sums_of_str_elements_are_equal(func):
-    def inner_num(*args, **kwargs):
+    pass
+   """ def inner_num(*args, **kwargs):
         nonlocal negative
         numbers = func(*args, **kwargs).split()
         numbers = [int(x) for x in numbers]
@@ -28,7 +29,7 @@ def sums_of_str_elements_are_equal(func):
             else:
                 liczba = int(digit)
                 digits.append(liczba)
-        return sum(digits)
+        return sum(digits) """
 
 
 def format_output(*required_keys):
