@@ -6,7 +6,7 @@ def greeter(func):
 
 
 def sums_of_str_elements_are_equal(func):
-    def inner(*args, **kwargs):
+    def inner_num(*args, **kwargs):
         nonlocal negative
         numbers = func(*args, **kwargs).split()
         numbers = [int(x) for x in numbers]
@@ -15,7 +15,7 @@ def sums_of_str_elements_are_equal(func):
         else:
             info = f'{digitSum(numbers[0]) != {digitSum(numbers[1])}'
         return info
-    return inner
+    return inner_num
     def digitSum(n):
         digits = []
         minus = False
